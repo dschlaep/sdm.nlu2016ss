@@ -1,8 +1,14 @@
 Package: sdm.nlu2016ss
 Title: SDM code developed with a class during spring 2016
-Version: 0.0.0.9000
+Version: 0.0.0.9001
 Authors@R: person("Daniel", "Schlaepfer", email = "daniel.schlaepfer@unibas.ch", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
-Depends: R (>= 3.2.3)
+Description: A lot of stuff
+Depends:
+    R (>= 3.2.3)
+Suggests:
+    spocc (>= 0.4.5),
+    ROCR (>= 1.0.7),
+    raster (>= 2.5.2)
 License: GPL >= 3
 LazyData: true
+RoxygenNote: 5.0.1
