@@ -10,7 +10,14 @@ validate_sdm_data <- function(data, obs_coln) {
 	invisible(TRUE)
 }
 
-
+#' Import data
+#'
+#' @param filename A character string representing a path to a csv file.
+#' @param obs_coln The name of the column with the species observations.
+#' @param var_coln A vector with column names that will be used as predictors.
+#' @param na.rm A logical value.
+#' @seealso \code{\link{read.csv}}
+#' @return A list with the elements 'data', 'subset', ...
 #' @export
 import_sdm_data <- function(filename, obs_coln, var_coln, na.rm = FALSE) {
 	# Load data
