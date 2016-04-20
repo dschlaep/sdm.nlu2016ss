@@ -1,6 +1,6 @@
 Package: sdm.nlu2016ss
 Title: SDM code developed with a class during spring 2016
-Version: 0.0.0.9001
+Version: 0.0.0.9002
 Authors@R: person("Daniel", "Schlaepfer", email = "daniel.schlaepfer@unibas.ch", role = c("aut", "cre"))
 Description: A lot of stuff
 Depends:
