@@ -34,7 +34,11 @@ import_sdm_data <- function(filename, obs_coln, var_coln, na.rm = FALSE) {
 	}
 	
 	# Subset to complete cases
-	if (na.rm) temp_subset <- complete.cases(temp_dat[, c(obs_coln, var_coln2)])
+	if (na.rm) {
+		temp_subset <- complete.cases(temp_dat[, c(obs_coln, var_coln2)])
+	} else {
+		temp_subset <- rep(TRUE, nrow(temp_dat))
+	}
 	
 	# Validate observations
 	validate_sdm_data(temp_dat[temp_subset, c(obs_coln, var_coln2)], obs_coln)

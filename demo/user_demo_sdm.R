@@ -1,7 +1,11 @@
+
+
+
+
 library("sdm.nlu2016ss")
 
 
-fname_exp <- system.file("extdata", "SOGI_data2.csv", package = "sdm.nlu2016ss")
+fname_exp <- system.file("extdata", "SOGI_data1.csv", package = "sdm.nlu2016ss")
 
 
 dat_SOGI <- import_sdm_data(filename = fname_exp, 
